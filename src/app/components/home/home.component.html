@@ -1,0 +1,244 @@
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 col-xl-8">
+                <!-- Section Videos start -->
+                <div id="section_videos" class="mb-4">
+                    <div class="row mb-2">
+                        <span class="col-6 col-lg-4 col-xl-4 text-start fw-bold">Videos</span>
+                        <span class="col-6 col-lg-4 col-xl-4 text-end"><a href="" class="text-decoration-none section-view-all">Browse all videos</a></span>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12 col-lg-8 col-xl-8">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content my-2">
+                                        <div class="content-big-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2"><span class="fw-bold">{{ allVideo[0].title }}</span><br>{{ allVideo[0].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[0].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2">{{ allVideo[1].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[1].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2">{{ allVideo[2].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[2].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-xl-4">
+                            <div class="row">
+                                <div class="col-6 col-lg-12 col-xl-12">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2">{{ allVideo[3].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[3].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-12 col-xl-12">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2">{{ allVideo[4].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[4].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="content my-2">
+                                        <div class="content-add-box d-flex align-items-center justify-content-center"><i class="bi bi-cloud-upload me-3"></i><p>Upload<br>Your Own Video</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Videos end -->
+                <!-- Section People start -->
+                <div id="section_people" class="my-4">
+                    <div class="row mb-1">
+                        <span class="col-6 col-lg-4 col-xl-4 text-start fw-bold">People</span>
+                        <span class="col-6 col-lg-4 col-xl-4 text-end"><a href="" class="text-decoration-none section-view-all">View all</a></span>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-12 col-lg-8 col-xl-8">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content my-2">
+                                        <div class="content-big-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-7 text-start ps-2"><span class="fw-bold">{{ allPeople[0].name }}</span><br>{{ allPeople[0].title }}</div>
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allPeople[0].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-12 text-start ps-2">{{ allPeople[1].name }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-12 text-start ps-2">{{ allPeople[2].name }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-xl-4">
+                            <div class="row">
+                                <div class="col-6 col-lg-12 col-xl-12">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-12 text-start ps-2">{{ allPeople[3].name }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-12 col-xl-12">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-12 text-start ps-2">{{ allPeople[4].name }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="content my-2">
+                                        <div class="content-add-box d-flex align-items-center justify-content-center"><i class="bi bi-bullseye me-3"></i><p>Show<br>Your Work</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section People end -->
+                <!-- Section Documents start -->
+                <div id="section_documents" class="my-4">
+                    <div class="row mb-2">
+                        <span class="col-6 col-lg-4 col-xl-4 text-start fw-bold">Documents</span>
+                        <span class="col-6 col-lg-4 col-xl-4 text-end"><a href="" class="text-decoration-none section-view-all">Browse all documents</a></span>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12 col-lg-8 col-xl-8">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content my-2">
+                                        <div class="content-big-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-7 text-start ps-2"><span class="fw-bold">{{ allDocument[0].title }}</span><br>by {{ allDocument[0].name }}</div>
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allDocument[0].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-12 text-start ps-2"><span class="fw-bold">{{ allDocument[1].title }}</span><br><i class="bi bi-eye me-1"></i>{{ allDocument[1].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-12 text-start ps-2"><span class="fw-bold">{{ allDocument[2].title }}</span><br><i class="bi bi-eye me-1"></i>{{ allDocument[2].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-xl-4">
+                            <div class="row">
+                                <div class="col-6 col-lg-12 col-xl-12">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-12 text-start ps-2"><span class="fw-bold">{{ allDocument[3].title }}</span><br><i class="bi bi-eye me-1"></i>{{ allDocument[3].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-12 col-xl-12">
+                                    <div class="content my-2">
+                                        <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
+                                        <div class="content-title d-flex align-items-center justify-content-center">
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-12 text-start ps-2"><span class="fw-bold">{{ allDocument[4].title }}</span><br><i class="bi bi-eye me-1"></i>{{ allDocument[4].views }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="content my-2">
+                                        <div class="content-add-box d-flex align-items-center justify-content-center"><i class="bi bi-plus-circle me-3"></i><p>Show<br>Your Document</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Documents end -->
+            </div>
+            <div class="col-12 col-lg-4 col-xl-4">
+                <!-- Section Activity start -->
+                <div id="section_activity" class="mb-4">
+                    <div class="row">
+                        <span class="col-6 text-start fw-bold">Activity</span>
+                        <span class="col-6 text-end"><a href="" class="text-decoration-none section-view-all">View timeline / Filter activities</a></span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div *ngFor="let data of allActivity" class="col-12 my-1">
+                            <div class="activty d-flex align-items-center">
+                                <div class="activty-box d-flex align-items-center justify-content-center"><i class="bi bi-{{ data.type }}"></i></div>
+                                <div class="ms-2">
+                                    <p class="mb-0"><b class="me-1">{{ data.name }}</b><small>{{ data.action }}</small></p>
+                                    <p class="activty-desc mb-0">{{ data.description }}</p>
+                                    <p class="text-muted mb-0"><small><i class="bi bi-{{ data.type }} me-1"></i>{{ data.time }}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Activity end -->
+                <!-- Section Channels start -->
+                <div id="section_channels" class="mt-4">
+                    <div class="row">
+                        <span class="col-6 text-start fw-bold">Channels</span>
+                        <span class="col-6 text-end"><a href="" class="text-decoration-none section-view-all">Browse all channels</a></span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div *ngFor="let data of allChannel" class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
+                            <div class="channels">
+                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
+                                <div class="channels-title d-flex align-items-center justify-content-center">{{ data.channel }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Channels end -->
+            </div>
+        </div>
+    </div>
+</div>
